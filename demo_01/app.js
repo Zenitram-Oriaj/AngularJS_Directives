@@ -1,10 +1,4 @@
-// ********  APPLICATION  ******** \\
 var app = angular.module("app", []);
-
-// ********  CONTROLLERS  ******** \\
-
-
-// ********  DIRECTIVES  ******** \\
 
 app.directive('navBar', function(){
 	return{
@@ -15,7 +9,3 @@ app.directive('navBar', function(){
 		}
 	}
 });
-
-
-// ********   SERVICES    ******** \\
-
