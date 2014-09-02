@@ -4,7 +4,7 @@ app.directive('navBar', function () {
 	return {
 		restrict:    'E',
 		templateUrl: '../partials/navBar.html',
-		link:        function (scope, el, attr) {
+		link:        function (scope) {
 			scope.projectName = 'Directives';
 		}
 	}
