@@ -4,8 +4,8 @@ app.directive('navBar', function () {
 	return {
 		restrict:    'E',
 		templateUrl: '../partials/navBar.html',
-		link:        function (scope) {
-			scope.projectName = 'Directives';
+		link:        function (s,e,a) {
+			s.projectName = 'Directives';
 		}
 	}
 });
@@ -23,19 +23,25 @@ app.controller('btnCtrl', function ($scope) {
 
 app.directive('btnEvent', function () {
 	return {
-		link: function (scope, el) {
+		link: function (s,e,a) {
 			var cnt = 0;
-			var prev = 'btn-primary';
+			var x = a.off || 'primary';
+			var y = a.on || 'danger' ;
+			var t = x;
+
+			e.addClass('btn-' + t);
+
 			function toggle() {
-				prev = (prev !== 'btn-primary') ? 'btn-primary' : 'btn-danger';
+				e.removeClass('btn-' + t);
+				t = (t !== y) ? y : x;
+				e.addClass('btn-' + t);
 			}
-			el.bind('click', function () {
+
+			e.bind('click', function () {
 				cnt++;
-				scope.updateCnt(1);
-				el.html('Button Pressed ' + cnt.toString());
-				el.removeClass(prev);
+				s.updateCnt(1);
+				e.html('Button Pressed ' + cnt.toString());
 				toggle();
-				el.addClass(prev);
 			});
 		}
 	};
