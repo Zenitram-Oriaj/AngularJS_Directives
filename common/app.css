@@ -1,0 +1,69 @@
+body {
+  padding-top: 50px;
+  background: #ffffff url("./bg/wbg.png") repeat;
+}
+
+br {
+  padding-top: 8px;
+}
+
+/****************************************************/
+/*******                WIDGET                *******/
+/****************************************************/
+
+.widget {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: transparent;
+}
+
+/* Widget head */
+
+.widget .widget-head{
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  border-bottom:0;
+  padding: 5px 10px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+/* Widget body */
+
+.widget .widget-body{
+
+  padding:10px;
+  /*background: #ffffff url("./bg/dots.png") repeat;*/
+  position: relative;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #1e1e1e;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #1e1e1e;
+
+  border-top-width: 0;
+  border-bottom-width: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  filter: blur(3px);
+}
+
+.widget .widget-body .no-pad{
+  padding:0;
+}
+
+/* Widget foot */
+
+.widget .widget-foot{
+  background-color: #1e1e1e;
+  border-top:0;
+  color: #e1e1e1;
+  padding: 10px 12px 10px 12px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  font-size:12px;
+}

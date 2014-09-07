@@ -10,6 +10,27 @@ app.directive('navBar', function () {
 	}
 });
 
+app.controller('wdgtCtrl', function ($scope) {
+	$scope.wdgt = {};
+
+	$scope.wdgt.head = '<h3>This is the Header</h3>';
+	$scope.wdgt.foot = '<h4>This is the Footer</h4>';
+
+	$scope.wdgt.body = '<h3>This is the Body</h3>' + '<button class="btn btn-primary btn-block">I AM A Button</button>';
+});
+
+app.directive('widget',function(){
+	return {
+		restrict: 'E',
+		templateUrl: '../partials/widget.html',
+		link: function(s,e,a){
+			$('#head').html(s.wdgt.head);
+			$('#body').html(s.wdgt.body);
+			$('#foot').html(s.wdgt.foot);
+		}
+	}
+});
+
 app.controller('btnCtrl', function ($scope) {
 	$scope.btn = {
 		total: 0
