@@ -1,0 +1,88 @@
+body {
+  padding-top: 50px;
+  background: #ffffff url("./bg/wbg.png") repeat;
+}
+
+br {
+  padding-top: 8px;
+}
+
+.nav-bar-img {
+  background: #ffffff url("./bg/t1.jpg") repeat;
+}
+
+/****************************************************/
+/*******                WIDGET                *******/
+/****************************************************/
+
+.widget {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: transparent;
+}
+
+.widget i {
+  color:#444444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); /* 50% white from bottom */
+}
+
+/* Widget head */
+
+.widget .widget-head {
+  background: #ffffff url("./bg/m5.jpg") repeat;
+  color: #222222;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); /* 50% white from bottom */
+  border-bottom: 0;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Widget body */
+
+.widget .widget-body {
+
+  padding: 10px;
+  position: relative;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #dddddd;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #dddddd;
+
+  border-top-width: 0;
+  border-bottom-width: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  filter: blur(3px);
+}
+
+.widget .widget-body .no-pad {
+  padding: 0;
+}
+
+/* Widget foot */
+
+.widget .widget-foot {
+  background: #ffffff url("./bg/m5.jpg") repeat;
+  border-top: 0;
+  color: #222222;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); /* 50% white from bottom */
+  padding: 10px 12px 10px 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 3px 1px #777;
+  -webkit-box-shadow: 3px 3px 3px 1px #777;
+  box-shadow:         3px 3px 3px 1px #777;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
