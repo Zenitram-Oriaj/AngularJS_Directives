@@ -1,10 +1,18 @@
-<div class="menu">
-<ul>
-	<li>
-		<a href = "#">File</a>
-	</li>
-	<li>
-		<a href = "#">Edit</a>
-	</li>
-</ul>
+<div class = "menu">
+	<ul class="menu-left">
+		<li>
+			<a href = "#">File</a>
+		</li>
+		<li>
+			<a href = "#">Edit</a>
+		</li>
+	</ul>
+	<ul class="menu-right">
+		<li side-menu>
+			<a id="right-menu" href="#right-menu"><i class="fa fa-align-justify"></i></a>
+		</li>
+		<li clock>
+			<a href = "#">{{dateTime | date:'short'}}</a>
+		</li>
+	</ul>
 </div>

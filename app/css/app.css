@@ -38,18 +38,24 @@ br {
 
 .menu ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
-.menu ul li {
+.menu-left li {
   float: left;
   padding: 2px 5px;
+}
 
+.menu-right li{
+  float: right;
+  padding: 2px 5px;
+  margin-bottom: 0;
 }
 
 .menu ul li a {
   height: 24px;
   color: #111111;
-  padding: 2px;
+  padding: 2px 0;
   font-size: 14px;
   text-decoration: none;
   text-shadow: 0 1px 1px #dbdbdb;
@@ -60,6 +66,32 @@ br {
   color: #fff;
   text-shadow: none;
 }
+
+/****************************************************/
+/*******                SIDEBAR               *******/
+/****************************************************/
+
+.sidebar {
+  -moz-transition: right .1s;
+  -webkit-transition: right .1s;
+  -o-transition: right .1s;
+  transition: left .1s;
+  width: 100px;
+  background-color: #222222;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: -100px;
+}
+
+.slide-out {
+  -moz-transition: right 1s;
+  -webkit-transition: right 1s;
+  -o-transition: right 1s;
+  transition: left 1s;
+  right: 0;
+}
+
 /****************************************************/
 /*******                WIDGET                *******/
 /****************************************************/

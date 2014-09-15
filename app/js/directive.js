@@ -6,7 +6,7 @@ app.directive('menuBar', function () {
 	return {
 		restrict:    'E',
 		templateUrl: './partials/MenuBar.html',
-		controller: function($scope){
+		controller:  function ($scope) {
 			$scope.user = {};
 		},
 		link:        function (s, e, a) {
@@ -15,6 +15,32 @@ app.directive('menuBar', function () {
 	}
 });
 
+app.directive('clock', function () {
+	return {
+		restrict: 'A',
+		controller: function($scope){
+			$scope.dateTime = new Date();
+			setInterval(function(){
+				$scope.$apply(function(){
+					$scope.dateTime = Date.now();
+				});
+			},60 * 1000);
+		},
+		link:     function (s, e, a) {
+		}
+	}
+});
+
+app.directive('sideMenu', function () {
+	return {
+		restrict: 'E',
+		templateUrl: './partials/side-menu.html',
+		link:     function (s, e, a) {
+			e.bind('click', function(){
+			});
+		}
+	}
+});
 
 app.directive('navBar', function () {
 	return {
