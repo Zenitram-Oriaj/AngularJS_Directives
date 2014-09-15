@@ -2,6 +2,20 @@
  * Created by Jairo Martinez on 9/13/14.
  */
 
+app.directive('menuBar', function () {
+	return {
+		restrict:    'E',
+		templateUrl: './partials/MenuBar.html',
+		controller: function($scope){
+			$scope.user = {};
+		},
+		link:        function (s, e, a) {
+			s.user.name = 'Jairo Martinez';
+		}
+	}
+});
+
+
 app.directive('navBar', function () {
 	return {
 		restrict:    'E',
@@ -55,17 +69,18 @@ app.directive('widgetOptions', function () {
 		restrict: 'A',
 		link:     function (s, e) {
 			e.bind('click', function () {
-				var $wcontent = $(e).parent().parent().parent().next('.widget-body');
-				if ($wcontent.is(':visible')) {
-					$('.widgetMinMax').children('i')
+				var wcontent = $(e).parent().parent().parent().next('.widget-body');
+				console.log(wcontent);
+				if (wcontent.is(':visible')) {
+					$('.widget-icon-btn').children('i')
 						.removeClass('fa fa-chevron-up')
 						.addClass('fa fa-chevron-down');
 				} else {
-					$('.widgetMinMax').children('i')
+					$('.widget-icon-btn').children('i')
 						.removeClass('fa fa-chevron-down')
 						.addClass('fa fa-chevron-up');
 				}
-				$wcontent.toggle(500);
+				wcontent.toggle(500);
 			});
 		}
 	}

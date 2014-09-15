@@ -7,21 +7,22 @@
 
 	<title>Building Directives</title>
 
+	<link rel = "stylesheet" href = "./libs/css/reset.css"/>
 	<link rel = "stylesheet" href = "./libs/css/bootstrap.css">
 	<link rel = "stylesheet" href = "./libs/css/font-awesome.min.css">
 	<link rel = "stylesheet" href = "./libs/css/buttons.css"/>
 	<link rel = "stylesheet" href = "./css/app.css"/>
 </head>
 <body>
-
-<div class = "container">
-	<nav-bar></nav-bar>
+	<menu-bar></menu-bar>
+<div class = "container content-core">
 	<ng-view></ng-view>
 </div>
-<!-- /.container -->
+
 
 <script type = "text/javascript" src = "./libs/js/jquery.js"></script>
 <script type = "text/javascript" src = "./libs/js/bootstrap.js"></script>
+<script type = "text/javascript" src = "./libs/js/interface.js"></script>
 <script type = "text/javascript" src = "./libs/js/angular.js"></script>
 <script type = "text/javascript" src = "./libs/js/angular-route.js"></script>
 <script type = "text/javascript" src = "./libs/js/angular-resource.js"></script>
