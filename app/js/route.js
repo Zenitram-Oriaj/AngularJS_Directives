@@ -4,6 +4,9 @@
 
 app.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
+		.when('/start', {
+			templateUrl: './partials/start.html'
+		})
 		.when('/demo1', {
 			templateUrl: './partials/demo1.html',
 			controller:  'Demo1Ctrl'
@@ -13,10 +16,12 @@ app.config(['$routeProvider', function ($routeProvider) {
 			controller:  'Demo2Ctrl'
 		})
 		.when('/demo3', {
-			templateUrl: './partials/demo3.html',
-			controller:  'Demo3Ctrl'
+			templateUrl: './partials/demo3.html'
+		})
+		.when('/demo4', {
+			templateUrl: './partials/demo4.html'
 		})
 		.otherwise({
-			redirectTo: '/demo1'
+			redirectTo: '/start'
 		});
 }]);

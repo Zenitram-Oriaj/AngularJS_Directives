@@ -2,13 +2,15 @@
 	<ul class = "menu-left">
 		<li>
 			<div class="btn-group" dropdown is-open="status.isopen">
-				<a class="dropdown-toggle" ng-disabled="disabled">
+				<a class="dropdown-toggle">
 					 Examples <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#/demo1">Example 01</a></li>
-					<li><a href="#/demo2">Example 02</a></li>
-					<li><a href="#/demo3">Example 03</a></li>
+					<li><a href="#/start" ng-click="hideCounter()">The Basics</a></li>
+					<li><a href="#/demo1" ng-click="hideCounter()">Example 01</a></li>
+					<li><a href="#/demo2" ng-click="hideCounter()">Example 02</a></li>
+					<li><a href="#/demo3" ng-click="hideCounter()">Example 03</a></li>
+					<li><a href="#/demo4" ng-click="showCounter()">Example 04</a></li>
 				</ul>
 			</div>
 		</li>

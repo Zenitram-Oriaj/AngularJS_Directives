@@ -1,0 +1,25 @@
+<div>
+	<div class = "widget shadow">
+		<div class = "widget-head">
+			<div class = "row">
+				<div class = "col-xs-10">
+					<h4><i class = "fa fa-puzzle-piece"></i> Voting For: {{title}}</h4>
+				</div>
+				<div class = "col-xs-2">
+					<a widget-options class = "widget-icon-btn"><i class = "fa fa-chevron-up fa-lg"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class = "widget-body">
+			<div class = "row" ng-repeat = "item in items">
+				<div class = "col-xs-12">
+					<div vote-event off = "{{item.off}}" on = "{{item.on}}" class = "button button-block">{{item.name}}</div>
+				</div>
+				<br/>
+			</div>
+		</div>
+		<div class = "widget-foot">
+			<h4>Total Votes Placed: <b>{{votes.total}}</b></h4>
+		</div>
+	</div>
+</div>

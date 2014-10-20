@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Coke",
+    "off":"highlight",
+    "on": "action"
+  },
+  {
+    "name":"Mountain Dew",
+    "off":"royal",
+    "on": ""
+  },
+  {
+    "name":"Dr. Pepper",
+    "off":"primary",
+    "on": ""
+  },
+  {
+    "name":"Water",
+    "off":"",
+    "on": ""
+  }
+]

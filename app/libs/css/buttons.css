@@ -190,15 +190,15 @@ button.button:disabled {
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  color: #666;
-  border: 2px solid #666;
+  color: #555;
+  border: 1px solid #888;
   background: none;
   text-shadow: none; }
   /* line 135, ../scss/partials/_buttons.scss */
   .button-border:hover, .button-border:focus {
     background: none;
     color: gray;
-    border: 2px solid gray; }
+    border: 1px solid gray; }
   /* line 140, ../scss/partials/_buttons.scss */
   .button-border:active {
     -moz-transition-duration: 0s;
@@ -207,7 +207,7 @@ button.button:disabled {
     transition-duration: 0s;
     background: none;
     color: #4d4d4d;
-    border: 2px solid #4d4d4d; }
+    border: 1px solid #4d4d4d; }
   /* line 146, ../scss/partials/_buttons.scss */
   .button-border.disabled {
     -moz-box-shadow: none;

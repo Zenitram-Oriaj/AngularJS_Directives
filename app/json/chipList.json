@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Doritos",
+    "off":"highlight",
+    "on": "action"
+  },
+  {
+    "name":"Pringles",
+    "off":"royal",
+    "on": ""
+  },
+  {
+    "name":"Cheetos",
+    "off":"primary",
+    "on": ""
+  },
+  {
+    "name":"None",
+    "off":"default",
+    "on": ""
+  }
+]

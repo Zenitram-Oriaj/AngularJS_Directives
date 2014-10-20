@@ -11,13 +11,19 @@
 	<link rel = "stylesheet" href = "./libs/css/bootstrap.css">
 	<link rel = "stylesheet" href = "./libs/css/font-awesome.min.css">
 	<link rel = "stylesheet" href = "./libs/css/buttons.css"/>
+
 	<link rel = "stylesheet" href = "./css/app.css"/>
 </head>
 <body ng-controller="AppCtrl">
 	<menu-bar></menu-bar>
-<div class = "container content-core">
-	<ng-view></ng-view>
-</div>
+
+	<div class = "container content-core">
+		<ng-view></ng-view>
+	</div>
+
+	<footer>
+		<p ng-show="showTotalCounter">Total Vote Count Is: {{totalCnt}}</p>
+	</footer>
 
 <script type = "text/javascript" src = "./libs/js/jquery.js"></script>
 <script type = "text/javascript" src = "./libs/js/angular.js"></script>
@@ -25,9 +31,13 @@
 <script type = "text/javascript" src = "./libs/js/angular-resource.js"></script>
 <script type = "text/javascript" src = "./libs/js/ui-bootstrap-tpls.js"></script>
 
+<script type = "text/javascript" src = "./js/widget.js"></script>
 <script type = "text/javascript" src = "./js/app.js"></script>
-<script type = "text/javascript" src = "./js/controller.js"></script>
-<script type = "text/javascript" src = "./js/directive.js"></script>
 <script type = "text/javascript" src = "./js/route.js"></script>
+
+<script type = "text/javascript" src = "./js/examples/demo1.js"></script>
+<script type = "text/javascript" src = "./js/examples/demo2.js"></script>
+<script type = "text/javascript" src = "./js/examples/demo3.js"></script>
+<script type = "text/javascript" src = "./js/examples/demo4.js"></script>
 </body>
 </html>

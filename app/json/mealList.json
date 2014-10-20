@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Steak",
+    "off":"highlight",
+    "on": "action"
+  },
+  {
+    "name":"Hamburger",
+    "off":"royal",
+    "on": ""
+  },
+  {
+    "name":"Soup",
+    "off":"primary",
+    "on": ""
+  },
+  {
+    "name":"Chicken",
+    "off":"",
+    "on": ""
+  },
+  {
+    "name":"Vegi-Burger",
+    "off":"",
+    "on": ""
+  },
+  {
+    "name":"Not Hungry",
+    "off":"",
+    "on": ""
+  }
+]
