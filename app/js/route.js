@@ -6,17 +6,17 @@ app.config(['$routeProvider', function ($routeProvider) {
 	$routeProvider
 		.when('/demo1', {
 			templateUrl: './partials/demo1.html',
-			controller:  'D1Controller'
+			controller:  'Demo1Ctrl'
 		})
 		.when('/demo2', {
 			templateUrl: './partials/demo2.html',
-			controller:  'D2Controller'
+			controller:  'Demo2Ctrl'
 		})
 		.when('/demo3', {
 			templateUrl: './partials/demo3.html',
-			controller:  'D2Controller'
+			controller:  'Demo3Ctrl'
 		})
 		.otherwise({
-			redirectTo: '/demo3'
+			redirectTo: '/demo1'
 		});
 }]);

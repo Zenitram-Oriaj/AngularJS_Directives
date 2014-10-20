@@ -2,15 +2,42 @@
  * Created by Jairo Martinez on 9/13/14.
  */
 
-app.controller('D1Controller', function($scope){
+app.controller('AppCtrl', function ($scope) {
+	$scope.totalCnt = 1;
+	$scope.addAllPresses = function (val) {
+		$scope.totalCnt += val;
+	};
+});
+
+app.controller('MenuCtrl',function($scope){
+	$scope.user = {};
+
+	$scope.status = {
+		isopen: false
+	};
+
+	$scope.toggled = function(open) {
+
+	};
+
+	$scope.toggleDropdown = function($event) {
+		$event.preventDefault();
+		$event.stopPropagation();
+		$scope.status.isopen = !$scope.status.isopen;
+	};
+});
+
+app.controller('Demo1Ctrl', function ($scope) {
 
 });
 
-app.controller('D2Controller', function($scope){
+app.controller('Demo2Ctrl', function ($scope) {
+	$scope.submitForm = function(){
 
+	}
 });
 
-app.controller('D2Controller', function($scope){
+app.controller('Demo3Ctrl', function ($scope) {
 
 });
 
@@ -30,5 +57,6 @@ app.controller('btnCtrl', function ($scope) {
 		$scope.$apply(function () {
 			$scope.btn.total = $scope.btn.total + val;
 		});
+		$scope.addAllPresses($scope.btn.total);
 	}
 });

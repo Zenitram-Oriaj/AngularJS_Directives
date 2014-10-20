@@ -1,15 +1,23 @@
 <div class = "menu">
-	<ul class="menu-left">
+	<ul class = "menu-left">
 		<li>
-			<a href = "#">File</a>
-		</li>
-		<li>
-			<a href = "#">Edit</a>
+			<div class="btn-group" dropdown is-open="status.isopen">
+				<a class="dropdown-toggle" ng-disabled="disabled">
+					 Examples <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#/demo1">Example 01</a></li>
+					<li><a href="#/demo2">Example 02</a></li>
+					<li><a href="#/demo3">Example 03</a></li>
+				</ul>
+			</div>
 		</li>
 	</ul>
-	<ul class="menu-right">
+	<ul class = "menu-right">
 		<li side-menu>
-			<a id="right-menu" href="#right-menu"><i class="fa fa-align-justify"></i></a>
+			<a id = "right-menu" href = "#right-menu">
+				<i class = "fa fa-align-justify"></i>
+			</a>
 		</li>
 		<li clock>
 			<a href = "#">{{dateTime | date:'short'}}</a>

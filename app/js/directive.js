@@ -6,9 +6,7 @@ app.directive('menuBar', function () {
 	return {
 		restrict:    'E',
 		templateUrl: './partials/MenuBar.html',
-		controller:  function ($scope) {
-			$scope.user = {};
-		},
+		controller:  'MenuCtrl',
 		link:        function (s, e, a) {
 			s.user.name = 'Jairo Martinez';
 		}
@@ -25,8 +23,6 @@ app.directive('clock', function () {
 					$scope.dateTime = Date.now();
 				});
 			},60 * 1000);
-		},
-		link:     function (s, e, a) {
 		}
 	}
 });
