@@ -14,12 +14,8 @@ angular.module('ngWidget',[])
 				body: '',
 				foot: ''
 			};
-			//$scope.wdgt.head = $scope.wdgt.data.head;
-			//$scope.wdgt.foot = $scope.wdgt.data.foot;
-			//$scope.wdgt.body = $scope.wdgt.data.body;
 		},
 		link:        function (s, e, a) {
-			var b = e.innerHTML
 			$('#head').html(s.wdgt.head);
 			$('#body').html(s.wdgt.body);
 			$('#foot').html(s.wdgt.foot);

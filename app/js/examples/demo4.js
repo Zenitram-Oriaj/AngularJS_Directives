@@ -20,7 +20,6 @@ app.controller('voteCtrl', function ($scope) {
 	}
 });
 
-
 app.directive('voteWidget', function (DataService) {
 	return {
 		restrict: 'E',
@@ -41,7 +40,6 @@ app.directive('voteWidget', function (DataService) {
 		}
 	};
 });
-
 
 app.directive('voteEvent', function () {
 	return {

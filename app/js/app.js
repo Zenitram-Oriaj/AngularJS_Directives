@@ -30,10 +30,6 @@ app.controller('MenuCtrl',function($scope){
 		isopen: false
 	};
 
-	$scope.toggled = function(open) {
-
-	};
-
 	$scope.toggleDropdown = function($event) {
 		$event.preventDefault();
 		$event.stopPropagation();
@@ -46,7 +42,12 @@ app.directive('menuBar', function () {
 	return {
 		restrict:    'E',
 		templateUrl: './partials/MenuBar.html',
-		controller:  'MenuCtrl'
+		controller:  'MenuCtrl',
+		link: function(s,e,a) {
+			e.bind('mouseover',function(){
+				e.css('cursor', 'pointer');
+			});
+		}
 	}
 });
 

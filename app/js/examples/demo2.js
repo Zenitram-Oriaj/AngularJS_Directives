@@ -29,7 +29,7 @@ app.directive('formFullName', function(){
 		controller: function($scope){
 			$scope.checkName = function(){
 				if($scope.name.indexOf('J') > -1){
-					$scope.name = '';
+					$scope.name = 'You Meant H, Right?';
 				}
 			}
 		}
