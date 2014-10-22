@@ -39,7 +39,7 @@ angular.module('ngWidget',[])
 						.removeClass('fa fa-chevron-down')
 						.addClass('fa fa-chevron-up');
 				}
-				wcontent.toggle(500);
+				wcontent.toggle(250);
 			});
 		}
 	}
