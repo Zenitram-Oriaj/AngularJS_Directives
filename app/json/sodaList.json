@@ -1,10 +1,5 @@
 [
   {
-    "name":"Coke",
-    "off":"highlight",
-    "on": "action"
-  },
-  {
     "name":"Mountain Dew",
     "off":"royal",
     "on": ""

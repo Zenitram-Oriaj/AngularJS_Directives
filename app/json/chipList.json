@@ -16,7 +16,7 @@
   },
   {
     "name":"None",
-    "off":"default",
+    "off":"highlight",
     "on": ""
   }
 ]
