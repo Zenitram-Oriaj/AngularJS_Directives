@@ -68,6 +68,9 @@ br {
   text-shadow: none;
 }
 
+/****************************************************/
+/*******                FOOTER                *******/
+/****************************************************/
 
 footer {
   visibility: visible;
@@ -86,7 +89,7 @@ footer {
 
 
   text-align:center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -99,6 +102,10 @@ footer p{
   text-shadow: 0 1px 1px #dbdbdb;
   font-weight: 500;
 }
+
+/****************************************************/
+/*******                 GLASS                *******/
+/****************************************************/
 
 .glass {
   padding: 10px;
