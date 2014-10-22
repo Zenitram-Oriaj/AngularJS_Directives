@@ -242,3 +242,31 @@ footer p{
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+.widget .tv-head{
+  padding:3px 5px;
+  font-size:11px;
+  letter-spacing:0.05em;
+  line-height:11px;
+  color:#BBB;
+}
+
+.widget .tv-head-icons b{
+  width:11px;
+  height:11px;
+  display:inline-block;
+  border-radius:100px;
+  border:1px solid #BBB;
+}
+
+.widget .tv-head-icons b.tv-icon-red{
+  background:#ea596a;
+}
+
+.widget .tv-head-icons b.tv-icon-orange{
+  background:#d8891e;
+}
+
+.widget .tv-head-icons b.tv-icon-green{
+  background:#70ca5e;
+}
