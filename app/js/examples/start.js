@@ -5,7 +5,7 @@ app.controller('StartCtrl', function($scope){
 app.directive('anotherDirective', function(){
 	return {
 		restrict: 'EA',
-		link: function(scope, element, attribute){
+		link: function(scope, element){
 			element.html('Your Last Name Is ' + scope.lastName);
 		}
 	}

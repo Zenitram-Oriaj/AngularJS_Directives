@@ -1,7 +1,7 @@
 var app = angular.module("app",['ngRoute','ngResource','ui.bootstrap','ngWidget']);
 
 app.run(function($templateCache){
-	$templateCache.put('keyHello','<h1>Hello From Template Cache</h1>')
+	$templateCache.put('keyHello.html','<h1>Hello From Template Cache</h1>')
 });
 
 app.controller('AppCtrl', function ($scope) {
@@ -36,7 +36,6 @@ app.controller('MenuCtrl',function($scope){
 		$scope.status.isopen = !$scope.status.isopen;
 	};
 });
-
 
 app.directive('menuBar', function () {
 	return {
