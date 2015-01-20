@@ -245,18 +245,18 @@ footer p{
 
 .widget .tv-head{
   padding:3px 5px;
-  font-size:11px;
+  font-size:14px;
   letter-spacing:0.05em;
-  line-height:11px;
+  line-height:14px;
   color:#BBB;
 }
 
 .widget .tv-head-icons b{
-  width:11px;
-  height:11px;
+  width:14px;
+  height:14px;
   display:inline-block;
   border-radius:100px;
-  border:1px solid #BBB;
+  border:1px solid #DDD;
 }
 
 .widget .tv-head-icons b.tv-icon-red{
